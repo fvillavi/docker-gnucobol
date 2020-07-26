@@ -20,6 +20,6 @@ RUN make check
 RUN ldconfig
 
 WORKDIR ~/
-COPY test.cob .
+COPY test.cob .         # Missing file in gnucobol-3.0-rc1.tar.gz
 RUN cobc --version
 RUN cobc -xj test.cob
